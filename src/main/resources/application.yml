@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:mysql://parayo-db-dev-02.cogoihohkko1.us-east-2.rds.amazonaws.com:3306/parayo?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: parayo
+    password: sarasara
+    data-username: parayo
+    data-password: sarasara
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # 엔티티에 변화가 생겼을 때 테이블 스키마도 업데이트한다
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+  resources:
+    static-locations:
+  servlet:
+    multipart:
+      max-file-size: 20MB
+
+parayo:
+  file-upload:
+    default-dir: c:\\parayo
