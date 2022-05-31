@@ -16,7 +16,7 @@ class WebConfig @Autowired constructor(
         registry: ResourceHandlerRegistry
     ) {
         registry.addResourceHandler("/images/**")
-            .addResourceLocations("file:///parayo/images/")
+            .addResourceLocations("file:///parayo-api/images/")
     }
 
     override fun addInterceptors(registry: InterceptorRegistry) {
