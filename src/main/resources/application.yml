@@ -19,4 +19,4 @@ spring:
 
 parayo:
   file-upload:
-    default-dir: c:\\parayo
+    default-dir: /parayo
